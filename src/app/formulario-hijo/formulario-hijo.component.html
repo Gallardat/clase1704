@@ -1,0 +1,17 @@
+
+<h1>Listado de doctores:</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>DNI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let datos of recibirDePadre "></tr>
+    <td>{{recibirDePadre.nombre}}</td>
+    <td>{{recibirDePadre.apellido}}</td>
+    <td>{{recibirDePadre.dni}}</td>
+  </tbody>
+</table>

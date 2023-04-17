@@ -1,0 +1,16 @@
+<h1>FORMULARIO PADRE A HIJO</h1>
+
+<label>
+  Nombre:
+  <input type="text" name="nombre" [(ngModel)]="nombre" required>
+</label><br><br>
+<label>
+  Apellido:
+  <input type="text" name="apellido" [(ngModel)]="apellido"required>
+</label><br><br>
+<label>
+  DNI:
+  <input type="text" name="dni" [(ngModel)]="dni"required>
+</label>
+<button (click)="agregarPaciente()">Agregar</button><br>
+<app-formulario-hijo [recibirDePadre]="doctores"></app-formulario-hijo>

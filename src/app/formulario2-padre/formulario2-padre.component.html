@@ -1,0 +1,20 @@
+<app-formulario2-hijo (datosPaciente)="addPaciente($event)"></app-formulario2-hijo>
+<h2>Listado de pacientes</h2>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>DNI</th>
+        <th>Dirección</th>
+        <th>Teléfono</th>
+        <th>Email</th>
+    </tr>
+    <tr *ngFor="let paciente of datoPaciente">
+        <td>{{paciente.nombre}}</td>
+        <td>{{paciente.apellidos}}</td>
+        <td>{{paciente.dni}}</td>
+        <td>{{paciente.direccion}}</td>
+        <td>{{paciente.telefono}}</td>
+        <td>{{paciente.email}}</td>
+    </tr>
+</table>
